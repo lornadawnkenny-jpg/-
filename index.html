@@ -1,58 +1,344 @@
-*{margin:0;padding:0;box-sizing:border-box}
-body{font-family:Inter,sans-serif;background:#fafafa;color:#111}
-.container{width:min(1200px,90%);margin:auto;padding:70px 0}
-h1{font-size:72px;font-weight:800;letter-spacing:-2px;margin-bottom:28px}
-.intro{max-width:980px;font-size:22px;line-height:1.7;color:#444}
-.divider{height:2px;background:#d7d7d7;margin:35px 0 45px}
-.profile{display:grid;grid-template-columns:1fr 430px;gap:80px;align-items:start}
-.quote{background:#d9b9f4;padding:35px;margin-bottom:50px}
-.quote p{font-size:28px;font-weight:800;line-height:1.35}
-h2{font-size:58px;margin-bottom:30px;font-weight:800}
-.details{font-size:22px;line-height:1.9}.details p{margin-bottom:12px}
-.details a{color:#000;text-decoration:none;word-break:break-word}
-.status{margin-top:45px;display:flex;align-items:center;gap:18px;font-size:24px}
-.checkbox{width:54px;height:54px;background:#b48dd8;color:#fff;border-radius:5px;display:flex;align-items:center;justify-content:center;font-size:36px}
-.right img{width:100%;display:block;box-shadow:12px 12px 16px rgba(0,0,0,.18)}
-footer{margin-top:55px;padding-top:28px;border-top:2px solid #d8d8d8;font-size:26px;font-weight:700}
-footer a{color:#b08acd;text-decoration:none}
-@media(max-width:900px){.profile{grid-template-columns:1fr}.right{order:-1}h1{font-size:48px}.intro,.details{font-size:18px}h2{font-size:42px}.quote p{font-size:22px}footer{font-size:18px}}
-
 <!DOCTYPE html>
-<!-- saved from url=(0050)file:///C:/Users/Wynter/Downloads/index%20(1).html -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="en">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Getting an Agent</title>
-<link rel="preconnect" href="https://fonts.googleapis.com/">
-<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-<link href="./Getting an Agent_files/css2" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:Inter,sans-serif;
+    background:#fafafa;
+    color:#111;
+}
+
+.container{
+
+    max-width:1100px;
+    margin:auto;
+    padding:70px;
+}
+
+h1{
+
+    font-size:78px;
+    font-weight:800;
+    letter-spacing:-2px;
+    margin-bottom:28px;
+}
+
+.intro{
+
+    font-size:22px;
+    line-height:1.65;
+    color:#444;
+    max-width:1000px;
+}
+
+.divider{
+
+    margin:30px 0 42px;
+    height:2px;
+    background:#d6d6d6;
+}
+
+.profile{
+
+    display:grid;
+    grid-template-columns:1fr 430px;
+    gap:70px;
+    align-items:start;
+}
+
+.quote{
+
+    background:#d9b8f5;
+    padding:34px;
+    font-size:28px;
+    font-weight:800;
+    line-height:1.35;
+    margin-bottom:45px;
+}
+
+.name{
+
+    font-size:58px;
+    font-weight:800;
+    margin-bottom:28px;
+}
+
+.info{
+
+    font-size:22px;
+    line-height:1.85;
+}
+
+.info b{
+
+    font-weight:700;
+}
+
+.info a{
+
+    color:#000;
+    text-decoration:none;
+    word-break:break-word;
+}
+
+.photo{
+
+    width:100%;
+    border-radius:2px;
+    box-shadow:10px 10px 15px rgba(0,0,0,.18);
+}
+
+.status{
+
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+    margin-top:42px;
+
+    font-size:22px;
+}
+
+.check{
+
+    width:52px;
+    height:52px;
+
+    background:#b58cd9;
+
+    color:white;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    font-size:34px;
+    border-radius:4px;
+}
+
+.bottom{
+
+    margin-top:40px;
+
+    border-top:2px solid #d5d5d5;
+
+    padding-top:24px;
+
+    font-size:24px;
+
+    color:#b08acd;
+
+    font-weight:700;
+}
+
+.bottom a{
+
+    color:#b08acd;
+    text-decoration:none;
+}
+
+.bottom a:hover{
+
+    text-decoration:underline;
+}
+
+@media(max-width:900px){
+
+.container{
+
+padding:30px;
+
+}
+
+h1{
+
+font-size:52px;
+
+}
+
+.profile{
+
+grid-template-columns:1fr;
+
+}
+
+.photo{
+
+max-width:500px;
+
+margin:auto;
+
+display:block;
+
+}
+
+.quote{
+
+font-size:22px;
+
+}
+
+.name{
+
+font-size:42px;
+
+}
+
+.info{
+
+font-size:18px;
+
+}
+
+.bottom{
+
+font-size:18px;
+
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
+
 <div class="container">
-<header>
+
 <h1>Getting an agent</h1>
-<p class="intro">Getting an agent may seem like an intimidating process, so we've broken down exactly what a literary agent is, and what they're looking for. You'll get a look into how a literary agent is part of the publishing process, and some top tips for how to find the right one for you, as well as how to pitch your book to them.</p>
-</header>
+
+<p class="intro">
+
+Getting an agent may seem like an intimidating process, so we've broken down exactly what a literary agent is, and what they're looking for. You'll get a look into how a literary agent is part of the publishing process, and some top tips for how to find the right one for you, as well as how to pitch your book to them.
+
+</p>
+
 <div class="divider"></div>
-<main class="profile">
-<section class="left">
-<div class="quote"><p>"My role is to make sure that the book is in as strong a shape as possible so that it will be acquired by a publisher"</p></div>
-<h2>Nicholas Galitzine</h2>
-<div class="details">
-<p>💼 <strong>Agency:</strong> Supernova Press</p>
-<p>🌍 <strong>Location:</strong> Los Angeles, US</p>
-<p>🧑‍💻 <strong>Website:</strong> <a href="file:///C:/Users/Wynter/Downloads/index%20(1).html#">https://www.supernovapress.com/features/nicholas-galitzine</a></p>
-<p>📣 <strong>Preferred contact method:</strong> Submit queries through online form</p>
-<p><strong>Genres:</strong> Fiction, Literary Fiction, Nonfiction, Memoir, Narrative Nonfiction, Politics, Cookbook</p>
-<p><strong>Previous clients:</strong> James Stuart, Jasper Thorne, Clara Bennett</p>
-<p><strong>Current clients:</strong> Henry Fox, Margaret Hawthorne</p>
-</div>
-<div class="status"><div class="checkbox">✓</div><span>Open to queries</span></div>
-</section>
-<aside class="right"><img src="https://i.mji.rip/2026/07/17/0a6e33aef08b0eb608dd34d2036e1421.jpeg" alt="0a6e33aef08b0eb608dd34d2036e1421.jpeg" border="0" /></aside>
-</main>
-<footer>Query Tracker</a> | Publishers Marketplace</a> | Agent Query</a></footer>
+
+<div class="profile">
+
+<div>
+
+<div class="quote">
+
+'My role is to make sure that the book is in as strong a shape as possible so that it will be acquired by a publisher'
+
 </div>
 
-</body></html>
+<div class="name">
+
+Nicholas Galitzine
+
+</div>
+
+<div class="info">
+
+<p>💼 <b>Agency:</b> Supernova Press</p>
+
+<p>🌍 <b>Location:</b> Los Angeles, US</p>
+
+<p>
+
+🧑‍💻 <b>Website:</b>
+
+<a href="https://www.supernovapress.com/features/nicholas-galitzine">
+
+https://www.supernovapress.com/features/nicholas-galitzine
+
+</a>
+
+</p>
+
+<p>
+
+📣 <b>Preferred contact method:</b>
+
+Submit queries through online form
+
+</p>
+
+<p>
+
+<b>Genres:</b>
+
+Fiction, Literary Fiction, Nonfiction, Memoir, Narrative Nonfiction, Politics, Cookbook
+
+</p>
+
+<p>
+
+<b>Previous clients:</b>
+
+James Stuart, Jasper Thorne, Clara Bennett
+
+</p>
+
+<p>
+
+<b>Current clients:</b>
+
+Henry Fox, Margaret Hawthorne
+
+</p>
+
+</div>
+
+<div class="status">
+
+<div class="check">
+
+✓
+
+</div>
+
+<div>
+
+Open to queries
+
+</div>
+
+</div>
+
+</div>
+
+<div>
+
+<img class="photo" src="nicholas.jpg" alt="Nicholas Galitzine">
+
+</div>
+
+</div>
+
+<div class="bottom">
+
+<a href="#">Query Tracker</a>
+
+|
+
+<a href="#">Publishers Marketplace</a>
+
+|
+
+<a href="#">Agent Query</a>
+
+</div>
+
+</div>
+
+</body>
+</html>
